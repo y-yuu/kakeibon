@@ -27,7 +27,6 @@ const addNewRecord = () => {
 const regist = () => {
     detailRegisterStore.regist();    
     detailRegisterStore.itemList = new Array<DetailItemInfo>();
-    counter = 0;
 }
 
 
