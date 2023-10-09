@@ -61,23 +61,46 @@ export const useSubClassListStore = defineStore({
             this.subClassList.push({
                 classId: "1",
                 subClassId: "1",
-                name: "カフェ",
+                name: "コンビニ",
                 itemType: "spending"
             });
 
             this.subClassList.push({
                 classId: "1",
                 subClassId: "2",
-                name: "外食",
+                name: "平日昼",
                 itemType: "spending"
             });
 
             this.subClassList.push({
                 classId: "1",
                 subClassId: "3",
+                name: "間食",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "1",
+                subClassId: "4",
+                name: "外食",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "1",
+                subClassId: "5",
+                name: "備蓄用",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "1",
+                subClassId: "6",
                 name: "その他",
                 itemType: "spending"
             });
+
+            // --------------------
 
             this.subClassList.push({
                 classId: "2",
@@ -100,17 +123,19 @@ export const useSubClassListStore = defineStore({
                 itemType: "spending"
             });
 
+            // ---------------------
+
             this.subClassList.push({
                 classId: "3",
                 subClassId: "0",
-                name: "家事消耗品",
+                name: "消耗品",
                 itemType: "spending"
             });
 
             this.subClassList.push({
                 classId: "3",
                 subClassId: "1",
-                name: "家具家電",
+                name: "非消耗品",
                 itemType: "spending"
             });
 
@@ -121,17 +146,114 @@ export const useSubClassListStore = defineStore({
                 itemType: "spending"
             });
 
+            // -------------------
+
             this.subClassList.push({
-                classId: "4",
+                classId: "6",
                 subClassId: "0",
                 name: "スマホ代",
                 itemType: "spending"
             });
 
             this.subClassList.push({
-                classId: "4",
+                classId: "6",
                 subClassId: "1",
                 name: "インターネット代",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "6",
+                subClassId: "2",
+                name: "NHK受信料",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "6",
+                subClassId: "3",
+                name: "その他",
+                itemType: "spending"
+            });
+
+            // -------------------
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "0",
+                name: "歯科",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "1",
+                name: "婦人科",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "2",
+                name: "皮膚科",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "3",
+                name: "耳鼻科",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "4",
+                name: "内科",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "5",
+                name: "市販薬",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "7",
+                subClassId: "6",
+                name: "その他",
+                itemType: "spending"
+            });
+
+            // --------------------
+
+            this.subClassList.push({
+                classId: "13",
+                subClassId: "0",
+                name: "美容院・床屋",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "13",
+                subClassId: "1",
+                name: "コスメ（必須）",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "13",
+                subClassId: "2",
+                name: "コスメ（オプション）",
+                itemType: "spending"
+            });
+
+            this.subClassList.push({
+                classId: "13",
+                subClassId: "3",
+                name: "その他",
                 itemType: "spending"
             });
 

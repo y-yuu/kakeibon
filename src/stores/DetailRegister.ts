@@ -104,7 +104,11 @@ export const useDetailRegister = defineStore({
                 });
             }
 
-            this.itemList.forEach( async ( item ) => {
+            const targetList = this.itemList.filter( (e) => {
+                return e.amountOfMoney > 0;
+            });
+
+            targetList.forEach( async ( item ) => {
                 const _item: DetailItemInfo = {
                     ...item
                 };
