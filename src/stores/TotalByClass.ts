@@ -147,9 +147,9 @@ export const useTotalByClassStore = defineStore({
         },
 
         getSubClassList: ( state ) => {
-            return ( itemType: "spending" | "incom", classId: string ): TotalBySubClass[] => {
+            return ( yearMonth: string, itemType: "spending" | "incom", classId: string ): TotalBySubClass[] => {
                 const targetList = state.totalByClassList.find( (e) => {
-                    return (e.itemType === itemType) && (e.itemClassId === classId );
+                    return ( e.yearMonth === yearMonth) && (e.itemType === itemType) && (e.itemClassId === classId );
                 });
 
                 if( targetList === undefined ) {

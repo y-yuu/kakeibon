@@ -330,7 +330,7 @@ let resultItemFloatEnableTransition = ref(false);
 
 const displayResultItemFloat = ( offsetX: number, offsetY: number, classId: string, itemType: "spending" | "incom" | "" ,enableSubClass: boolean, enableTransition: boolean ) => {
     if( itemType !== "" ) {
-        const subList = totalByClassStore.getSubClassList( itemType, classId );
+        const subList = totalByClassStore.getSubClassList( resultTableMonth.value, itemType, classId );
         if( subList.length > 0 ) {
             if( subList[0].itemSubClassName !== "" ) {
                 isDisplayResultItemFloat.value = true;
@@ -504,6 +504,7 @@ const eraseResultItemFloat = () => {
     v-if="isDisplayResultItemFloat"
     v-bind:offset-x="resultItemFloatOffsetX"
     v-bind:offset-y="resultItemFloatOffsetY"
+    v-bind:year-month="resultTableMonth"
     v-bind:item-type="resultItemFloatItemType"
     v-bind:class-id="resultItemFloatClassId"
     v-bind:enable-sub-class="resultItemFloatEnableSubClass"

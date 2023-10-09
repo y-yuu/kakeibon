@@ -9,6 +9,7 @@ import type { TotalBySubClass } from "@/interfaces";
 interface Props {
     offsetX: number;
     offsetY: number;
+    yearMonth: string;
     itemType: string;
     classId: string;
     enableSubClass: boolean;
@@ -23,7 +24,7 @@ const subClassList = computed( (): TotalBySubClass[] => {
     if( props.itemType === "" ) {
         return [];
     } else {
-        const subClassList = totalByClassStore.getSubClassList( props.itemType as "spending" | "incom", props.classId );
+        const subClassList = totalByClassStore.getSubClassList( props.yearMonth, props.itemType as "spending" | "incom", props.classId );
         return subClassList;
     }
 
